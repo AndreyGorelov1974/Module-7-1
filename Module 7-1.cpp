@@ -32,5 +32,6 @@ int main()
 
     for (buckwheatStock = 96; buckwheatStock >= 0; buckwheatStock -= 4) {
         std::cout << "После " << beenMonth << " месяца у вас в запасе останется " << buckwheatStock << " кг гречки" << std::endl;
+        beenMonth++;
     }
 }
