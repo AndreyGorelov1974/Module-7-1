@@ -30,7 +30,7 @@ int main()
     std::cout << "Всего гречки было на начало подсчёта: " << buckwheatStock << std::endl;
     int beenMonth = 1;
 
-    for (; buckwheatStock >= 0; buckwheatStock -= 4) {
+    for (buckwheatStock = 96; buckwheatStock >= 0; buckwheatStock -= 4) {
         std::cout << "После " << beenMonth << " месяца у вас в запасе останется " << buckwheatStock << " кг гречки" << std::endl;
     }
 }
