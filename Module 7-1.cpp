@@ -23,14 +23,14 @@
 
 int main()
 {
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001);
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
 
     int buckwheatStock = 100;
     std::cout << "Всего гречки было на начало подсчёта: " << buckwheatStock << std::endl;
     int beenMonth = 1;
 
-    for (; buckwheatStock < 0; buckwheatStock -= 4); {
+    for (; buckwheatStock >= 0; buckwheatStock -= 4) {
         std::cout << "После " << beenMonth << " месяца у вас в запасе останется " << buckwheatStock << " кг гречки" << std::endl;
     }
 }
