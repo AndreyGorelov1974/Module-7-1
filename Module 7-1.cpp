@@ -25,5 +25,12 @@ int main()
 {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
-    std::cout << "Hello World!\n";
+
+    int buckwheatStock = 100;
+    std::cout << "Всего гречки было на начало подсчёта: " << buckwheatStock << std::endl;
+    int beenMonth = 1;
+
+    for (; buckwheatStock < 0; buckwheatStock -= 4); {
+        std::cout << "После " << beenMonth << " месяца у вас в запасе останется " << buckwheatStock << " кг гречки" << std::endl;
+    }
 }
